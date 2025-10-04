@@ -1,10 +1,10 @@
-🍔 Byte Me! – College Canteen Ordering System
+## 🍔 Byte Me! – College Canteen Ordering System
 
 “Byte Me!” is a food ordering system designed specifically for our college canteen. It provides both a CLI-based application and a JavaFX-based GUI interface.
 
 The system helps students browse menus, place orders, and track deliveries, while also enabling canteen staff to manage menu items and process orders efficiently.
 
-📌 Assumptions
+## 📌 Assumptions
 
 There is only 1 Admin to handle the canteen and its menu.
 
@@ -16,19 +16,19 @@ A customer cannot cancel an order if its status is Preparing, Prepared, or Out-f
 
 Authentication functionality was optional in Assignment 4, so alternative options have been implemented.
 
-⚙️ Application Structure
+## ⚙️ Application Structure
 
 The system contains 4 core classes:
 
-Admin
+   Admin
 
-Order
+   Order
 
-Food
+   Food
 
-Customer
+   Customer
 
-Key OOP Concepts Implemented
+## Key OOP Concepts Implemented
 
 Encapsulation: Classes have public/private attributes accessed via getter and setter methods.
 
@@ -40,18 +40,18 @@ File Handling: Order history and temporary cart data are saved using files, ensu
 
 I/O Stream Management: Ensures updates done in CLI are reflected in GUI (GUI is read-only).
 
-🎯 Features
+## 🎯 Features
 CLI Features
 
-Students can browse the canteen menu, place orders, and track deliveries.
+  Students can browse the canteen menu, place orders, and track deliveries.
 
-Canteen staff can manage menu items and process orders.
+  Canteen staff can manage menu items and process orders.
 
-Maintains order histories (for every customer).
+  Maintains order histories (for every customer).
 
-Temporary cart storage via files, updated in real-time.
+  Temporary cart storage via files, updated in real-time.
 
-GUI Features (JavaFX)
+## GUI Features (JavaFX)
 
 Enhanced GUI for easy browsing:
 
@@ -65,18 +65,18 @@ CLI and GUI exchange data using I/O Stream Management.
 
 Order and cart data saved with File Handling.
 
-🧪 JUnit Testing Implemented
+## 🧪 JUnit Testing Implemented
 
-Ordering Out-of-Stock Items
+  Ordering Out-of-Stock Items
 
-Tests system’s ability to block unavailable items.
+  Tests system’s ability to block unavailable items.
 
-Verifies error message and prevents processing.
+  Verifies error message and prevents processing.
 
-Cart Operations
+  Cart Operations
 
-Adding an item → ensures total price updates correctly.
+  Adding an item → ensures total price updates correctly.
 
-Modifying quantity → recalculates total price accurately.
+  Modifying quantity → recalculates total price accurately.
 
-Negative quantity attempt → blocked with proper validation.
+  Negative quantity attempt → blocked with proper validation.
