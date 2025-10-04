@@ -1,0 +1,8 @@
+Food Name: Burger
+Price: 50.0
+Quantity: 30
+
+Food Name: pizza
+Price: 100.0
+Quantity: 50
+
