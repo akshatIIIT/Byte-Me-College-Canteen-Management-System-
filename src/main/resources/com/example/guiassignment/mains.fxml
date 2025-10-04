@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+
+<TabPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.guiassignment.mainController">
+    <tabs>
+        <Tab text="Menu" closable="false">
+            <content>
+                <fx:include source="menu.fxml"/>
+            </content>
+        </Tab>
+        <Tab text="Pending Orders" closable="false">
+            <content>
+                <fx:include source="pending.fxml"/>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

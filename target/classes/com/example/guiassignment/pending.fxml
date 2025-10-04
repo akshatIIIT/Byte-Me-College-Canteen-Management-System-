@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.geometry.Insets?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.guiassignment.PendingController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label text="Pending Orders Status" style="-fx-font-size: 20; -fx-font-weight: bold"/>
+    <TableView fx:id="ordersTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="orderIdColumn" text="Order ID" prefWidth="100"/>
+            <TableColumn fx:id="customerIdColumn" text="Customer ID" prefWidth="120"/>
+            <TableColumn fx:id="orderedItemsColumn" text="Items Ordered" prefWidth="250"/>
+            <TableColumn fx:id="orderStatusColumn" text="Status" prefWidth="120"/>
+            <TableColumn fx:id="orderTotalColumn" text="Total " prefWidth="100"/>
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+        </columnResizePolicy>
+    </TableView>
+</VBox>
